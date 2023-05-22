@@ -15,13 +15,13 @@
 </head>
 <nav>
     <div>
-        <ul class="nav" style="display: flex;justify-content: space-around;">
+        <ul class="nav flex-column flex-sm-row justify-content-sm-around">
             <div>
                 <li class="nav-item" style="justify-content: center;">
                     <h3 class="m-3">REVERA</h3>
                 </li>
             </div>
-            <div style="justify-content: center; display: flex;">
+            <div class="flex-wrap" style="justify-content: center; display: flex;">
                 <li class="nav-item m-1">
                     <a class="nav-link px-2 text-danger mt-2" aria-current="page" href="#">Home</a>
                 </li>
@@ -47,6 +47,7 @@
         </ul>
     </div>
 </nav>
+
 <div class="container-fluid d-flex align-items-center vh-100"
     style="background-image: url('/starter-code/img/gatito-kFjE-U100220773789IAB-1248x770@Diario Montanes.jpg')">
     <div class="carousel-inner">
@@ -59,11 +60,13 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <button class="carousel-control-prev d-flex justify-content-start" type="button" data-bs-target="#myCarousel"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon bg-danger p-4" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next ms-auto" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <button class="carousel-control-next ms-auto d-flex justify-content-end" type="button"
+            data-bs-target="#myCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon bg-danger p-4" aria-hidden="true" style="opacity: 1;"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -73,183 +76,181 @@
     <div class="container">
         <div class="row text-center py-5">
             <div class="col-12 col-sm-4">
-                <img src="/starter-code/img/Screenshot 2023-05-21 at 14.18.04.png" class="img-fluid mb-4" alt="...">
                 <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, </p>
             </div>
             <div class="col-12 col-sm-4">
-                <img src="/starter-code/img/Screenshot 2023-05-21 at 14.18.09.png" class="img-fluid mb-4" alt="...">
                 <h4>Web Development</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
             </div>
             <div class="col-12 col-sm-4">
-                <img src="/starter-code/img/Screenshot 2023-05-21 at 14.18.15.png" class="img-fluid mb-4" alt="...">
                 <h4>User Interface</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
             </div>
         </div>
     </div>
 </div>
-
+<div class="container">
     <div class="container">
+        <div class="row">
+            <div class="col-12 border-bottom mt-4 pb-4">
+                <h5>LATEST PROJECTS</h5>
+                <h7 class="text-secondary">FEW OF THE LATEST PORTFOLIO ITEMS</h7>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-3 mt-4 mb-5">
+            <img src="/starter-code/img/project-1.jpg" class="img-fluid mb-4" alt="...">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
+        </div>
+        <div class="col-12 col-md-3 mt-4 mb-5">
+            <img src="/starter-code/img/project-2.jpg" class="img-fluid mb-4" alt="...">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
+        </div>
+        <div class="col-12 col-md-3 mt-4 mb-5">
+            <img src="/starter-code/img/project-3.jpg" class="img-fluid mb-4" alt="...">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
+        </div>
+        <div class="col-12 col-md-3 mt-4 mb-5">
+            <img src="/starter-code/img/project-4.jpg" class="img-fluid mb-4" alt="...">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 border-bottom mt-4 pb-4">
+                <h5>LATEST ARTICLES</h5>
+                <h7 class="text-secondary">LATEST POST FROM THE BLOG</h7>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="d-flex">
+        <div class="row flex-wrap">
+            <div class="col-12 col-md-3 mt-4 mb-5">
+                <img src="/starter-code/img/slider-1.jpg" class="img-fluid mb-4" alt="...">
+                <h6>The standard Lorem Ipsum pas</h6>
+                <p>Lorem ipsum <span class="text-danger">dolor</span> sit amet, <span class="text-danger">consectetur
+                        adipisci</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi
+                    ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in [...]</p>
+            </div>
+            <div class="col-12 col-md-3 mt-4 mb-5">
+                <img src="/starter-code/img/slider-3.jpg" class="img-fluid mb-4" alt="...">
+                <h6>The standard Lorem Ipsum pas</h6>
+                <p>Lorem ipsum <span class="text-danger">dolor</span> sit amet, <span class="text-danger">consectetur
+                        adipisci</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi
+                    ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate [...]
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mt-4 mb-5">
+                <img src="/starter-code/img/slider-4.jpg" class="img-fluid mb-4" alt="...">
+                <h6>The standard Lorem Ipsum pas</h6>
+                <p>Lorem ipsum <span class="text-danger">dolor</span> sit amet, <span class="text-danger">consectetur
+                        adipisci</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi
+                    ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse
+                    cillum dolore eu fugiat nulla pariatur [...]</p>
+            </div>
+            <div class="col-12 col-md-3 mt-4 mb-5">
+                <img src="/starter-code/img/slider-2.jpg" class="img-fluid mb-4" alt="...">
+                <h6>The standard Lorem Ipsum pas</h6>
+                <p>Lorem ipsum <span class="text-danger">dolor</span> sit amet, <span class="text-danger">consectetur
+                        adipisci</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi
+                    ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse
+                    cillum dolore eu fugiat nulla pariatur [...]</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="border-top border-danger border-4">
+    <div class="container-fluid p-3 bg-secondary text-white">
         <div class="container">
             <div class="row">
-                <div class="col-12 border-bottom mt-4 pb-4">
-                    <h5>LATEST PROJECTS</h5>
-                    <h7 class="text-secondary">FEW OF THE LATEST PORTFOLIO ITEMS</h7>
+                <div class="col-3 p-2 col-12 col-md-3 mt-4 mb-2">
+                    <h5>REVERA</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in
+                        voluptate velit esse cillum dolore eu</p>
+                </div>
+                <div class="col-3 p-2 col-12 col-md-3 mt-4 mb-2">
+                    <h5>META</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-secondary text-white">An item</li>
+                        <li class="list-group-item bg-secondary text-white">A second item</li>
+                        <li class="list-group-item bg-secondary text-white">A third item</li>
+                        <li class="list-group-item bg-secondary text-white">A fourth item</li>
+                        <li class="list-group-item bg-secondary text-white">And a fifth one</li>
+                    </ul>
+                </div>
+                <div class="col-3 p-2 col-12 col-md-3 mt-4 mb-2">
+                    <h5>ARCHIVES</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-secondary text-white">An item</li>
+                    </ul>
+                </div>
+                <div class="col-3 p-2 col-12 col-md-3 mt-4 mb-2">
+                    <h5>RECENT POSTS</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-secondary text-white">An item</li>
+                        <li class="list-group-item bg-secondary text-white">A second item</li>
+                        <li class="list-group-item bg-secondary text-white">A third item</li>
+                        <li class="list-group-item bg-secondary text-white">A fourth item</li>
+                        <li class="list-group-item bg-secondary text-white">And a fifth one</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="container-fluid text-left p-3 bg-dark text-white">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-3 mt-4 mb-5">
-                <img src="/starter-code/img/project-1.jpg" class="img-fluid mb-4" alt="...">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
-            </div>
-            <div class="col-12 col-md-3 mt-4 mb-5">
-                <img src="/starter-code/img/project-2.jpg" class="img-fluid mb-4" alt="...">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
-            </div>
-            <div class="col-12 col-md-3 mt-4 mb-5">
-                <img src="/starter-code/img/project-3.jpg" class="img-fluid mb-4" alt="...">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
-            </div>
-            <div class="col-12 col-md-3 mt-4 mb-5">
-                <img src="/starter-code/img/project-4.jpg" class="img-fluid mb-4" alt="...">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
+                <p>Copyright lorem ipsum dolor sit amet, consectetur adipiscing elit, sedtempor incididunt
+                    ut l
+                </p>
             </div>
         </div>
     </div>
-    
-    <div class="container">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 border-bottom mt-4 pb-4">
-                    <h5>LATEST ARTICLES</h5>
-                    <h7 class="text-secondary">LATEST POST FROM THE BLOG</h7>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="d-flex">
-            <div class="row flex-wrap">
-                <div class="col-12 col-md-3 mt-4 mb-5">
-                    <img src="/starter-code/img/slider-1.jpg" class="img-fluid mb-4" alt="...">
-                    <h6>The standard Lorem Ipsum pas</h6>
-                    <p>Lorem ipsum <span class="text-danger">dolor</span> sit amet, <span class="text-danger">consectetur
-                            adipisci</span></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in [...]</p>
-                </div>
-                <div class="col-12 col-md-3 mt-4 mb-5">
-                    <img src="/starter-code/img/slider-3.jpg" class="img-fluid mb-4" alt="...">
-                    <h6>The standard Lorem Ipsum pas</h6>
-                    <p>Lorem ipsum <span class="text-danger">dolor</span> sit amet, <span class="text-danger">consectetur
-                            adipisci</span></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate [...]
-                    </p>
-                </div>
-                <div class="col-12 col-md-3 mt-4 mb-5">
-                    <img src="/starter-code/img/slider-4.jpg" class="img-fluid mb-4" alt="...">
-                    <h6>The standard Lorem Ipsum pas</h6>
-                    <p>Lorem ipsum <span class="text-danger">dolor</span> sit amet, <span class="text-danger">consectetur
-                            adipisci</span></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse
-                        cillum dolore eu fugiat nulla pariatur [...]</p>
-                </div>
-                <div class="col-12 col-md-3 mt-4 mb-5">
-                    <img src="/starter-code/img/slider-2.jpg" class="img-fluid mb-4" alt="...">
-                    <h6>The standard Lorem Ipsum pas</h6>
-                    <p>Lorem ipsum <span class="text-danger">dolor</span> sit amet, <span class="text-danger">consectetur
-                            adipisci</span></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse
-                        cillum dolore eu fugiat nulla pariatur [...]</p>
-                </div>
-    
-            </div>
-        </div>
-    </div>
-    <div class="border-top border-danger border-4">
-        <div class="container-fluid p-3 bg-secondary text-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-3 p-4 col-12 col-md-3 mt-4 mb-5">
-                        <h5>REVERA</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in
-                            voluptate velit esse cillum dolore eu</p>
-                    </div>
-                    <div class="col-3 p-4 col-12 col-md-3 mt-4 mb-5">
-                        <h5>META</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-secondary text-white">An item</li>
-                            <li class="list-group-item bg-secondary text-white">A second item</li>
-                            <li class="list-group-item bg-secondary text-white">A third item</li>
-                            <li class="list-group-item bg-secondary text-white">A fourth item</li>
-                            <li class="list-group-item bg-secondary text-white">And a fifth one</li>
-                        </ul>
-                    </div>
-                    <div class="col-3 p-4 col-12 col-md-3 mt-4 mb-5">
-                        <h5>ARCHIVES</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-secondary text-white">An item</li>
-                        </ul>
-                    </div>
-                    <div class="col-3 p-4 col-12 col-md-3 mt-4 mb-5">
-                        <h5>RECENT POSTS</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-secondary text-white">An item</li>
-                            <li class="list-group-item bg-secondary text-white">A second item</li>
-                            <li class="list-group-item bg-secondary text-white">A third item</li>
-                            <li class="list-group-item bg-secondary text-white">A fourth item</li>
-                            <li class="list-group-item bg-secondary text-white">And a fifth one</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid text-left p-3 bg-dark text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-3 mt-4 mb-5">
-                    <p>Copyright lorem ipsum dolor sit amet, consectetur adipiscing elit, sedtempor incididunt
-                        ut l
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-        </script>
-    </body>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+</body>
 
 </html>
